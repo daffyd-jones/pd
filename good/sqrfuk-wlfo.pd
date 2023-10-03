@@ -1,0 +1,41 @@
+#N canvas -1274 95 641 729 10;
+#X obj 134 71 mtof;
+#X obj 102 107 phasor~;
+#X obj 97 141 expr~ $v1 > 0.5;
+#X obj 156 405 phasor~;
+#X obj 152 442 expr~ $v1 > 0.5;
+#X obj 108 503 expr~ $v1 || $v2;
+#X obj 248 76 mtof;
+#X obj 227 102 phasor~;
+#X obj 229 137 expr~ $v1 > 0.5;
+#X obj 158 374 nbx 5 14 -1e+037 1e+037 0 0 empty empty empty 0 -6 0
+10 -262144 -1 -1 75 256;
+#X obj 119 25 inlet;
+#X obj 164 26 inlet;
+#X obj 213 25 inlet;
+#X obj 265 26 inlet;
+#X obj 57 49 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 362 30 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 98 293 expr~ $v1 && $v2;
+#X obj 110 583 outlet~;
+#X obj 361 264 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 16 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 1;
+#X connect 5 0 17 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 16 1;
+#X connect 9 0 3 0;
+#X connect 10 0 1 0;
+#X connect 11 0 0 0;
+#X connect 12 0 7 0;
+#X connect 13 0 6 0;
+#X connect 14 0 0 0;
+#X connect 15 0 6 0;
+#X connect 16 0 5 0;
+#X connect 18 0 3 0;

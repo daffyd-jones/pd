@@ -1,0 +1,11 @@
+#N canvas 0 0 667 709 10;
+#X obj 199 149 drumcenter-01;
+#X obj 108 147 drumcenter-02;
+#X obj 69 150 Kik;
+#X obj 63 260;
+#X obj 155 69 inlet;
+#X obj 110 68 inlet;
+#X obj 55 64 inlet;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;
+#X connect 6 0 2 0;
